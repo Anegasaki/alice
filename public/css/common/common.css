@@ -1,0 +1,74 @@
+body {
+    overflow                : hidden;
+    height                  : 600px;
+    padding                 : 40px 0;
+    background-color        : black;
+    text-align              : center;
+    color                   : black;
+    font-size               : 96pt;
+    transform-style         : preserve-3d;
+    -webkit-transform-style : preserve-3d;
+    perspective             : 200px;
+    -webkit-perspective     : 200px;
+}
+#footer {
+    position:absolute;
+    top     : 90%;
+    height  : 10%;
+}
+.wrapper {
+    text-align       : center;
+    width            : 980px;
+    background-color : black;
+    margin           : 0 auto;
+    margin-right     : 10px;
+    position         : relative;
+}
+.line{
+    position     : relative;
+    border-top   : dashed 2px #00ffff;
+    width        : 2000px;
+    height       : 5px;
+    margin-bottom: 5px;
+}
+.border-5px-0ff {
+    margin  :15px;
+    position:absolute;
+    border  :solid 5px rgba(0,255,255, 0.60);
+}
+.border-5px-0ff-sp {
+    margin        :115px;
+    position      :absolute;
+    border-top    :solid 5px black;
+    border-bottom :solid 5px black;
+    border-left   :solid 5px #00ffff;
+    border-right  :solid 5px #00ffff;
+}
+.border-10px-0ff {
+    left    :25%;
+    position:absolute;
+    margin  :0 auto;
+    border-top     :solid 10px #00ffff;
+    border-bottom  :solid 10px #00ffff;
+    border-left    :solid 10px black;
+    border-right   :solid 10px black;
+}
+.circle{
+    border-radius        : 50%;
+    -moz-border-radius   : 50%;
+    -webkit-border-radius: 50%;
+}
+.rotate-r {
+    animation: spin-r 10s linear infinite;
+}
+@keyframes spin-r {
+    0% {transform:rotate(0deg);}
+    100% {transform:rotate(360deg);}
+}
+.rotate-l {
+    animation: spin-l 10s linear infinite;
+}
+@keyframes spin-l {
+    0% {transform:rotate(0deg);}
+    100% {transform:rotate(-360deg);}
+}
